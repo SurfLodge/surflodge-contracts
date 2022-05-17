@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "This is an empty interface used to represent either ERC20-conforming token contracts or ETH (using the zero address sentinel value). We're just relying on the fact that `interface` can be used to declare new address-like types. This concept is unrelated to a Pool's Asset Managers.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/WeightedPool2TokensFactory.sol": "IAsset"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/WeightedPool2TokensFactory.sol": {
+			"keccak256": "0xd0cf39ba12ab02eca11de543e45c384b3434453874caeca3b50ae3801a5e8f2d",
+			"urls": [
+				"bzz-raw://602299fc031ebb67ea9c4e0fafee16bd06533885dd01756ed17f98bfbf90d10d",
+				"dweb:/ipfs/QmSK1DQJYHLMSa6QoZLKchhvR1HLyAFm1wVgYofTrfeP2u"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "This module provides an interface to store different pieces of information used by pools with a price oracle. These pieces of information are all kept together in a single storage slot to reduce the number of storage reads. In particular, it stores reduced-precision versions of the total BPT supply and invariant, which lets us not access nor compute these values when producing oracle updates during a swap. Data is stored with the following structure: [### not used ### | oracle enabled | oracle index | oracle sample initial timestamp | log supply | log invariant ] [     uint170     |      bool      |    uint10    |              uint31             |    int22   |     int22     ] Note that we are not using the most-significant 170 bits.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MetaStablePoolFactory.sol": "OracleMiscData"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MetaStablePoolFactory.sol": {
+			"keccak256": "0x18c4696133f33da03b00bde5fba928c156e4530fac35d190b7128a78a50bb721",
+			"urls": [
+				"bzz-raw://e6bdad938c981d96388c77c6aa75c777db251ebefe5736931e6ca4a01571f8eb",
+				"dweb:/ipfs/QmX45wiyEcoCa7paWmL4fudxXJwTJ8S6VkpdA6eCBpPAa6"
+			]
+		}
+	},
+	"version": 1
+}

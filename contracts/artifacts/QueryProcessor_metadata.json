@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Auxiliary library for PoolPriceOracle, offloading most of the query code to reduce bytecode size by using this as a linked library. The downside is an extra DELEGATECALL is added (2600 gas as of the Berlin hardfork), but the bytecode size gains are so big (specially of the oracle contract does not use `LogCompression.fromLowResLog`) that it is worth it.",
+			"kind": "dev",
+			"methods": {
+				"findNearestSample(mapping(uint256 => bytes32) storage,uint256,uint256)": {
+					"details": "Finds the two samples with timestamps before and after `lookUpDate`. If one of the samples matches exactly, both `prev` and `next` will be it. `offset` is the index of the oldest sample in the buffer. Assumes `lookUpDate` is greater or equal than the timestamp of the oldest sample, and less or equal than the timestamp of the latest sample."
+				},
+				"getInstantValue(mapping(uint256 => bytes32) storage,IPriceOracle.Variable,uint256)": {
+					"details": "Returns the value for `variable` at the indexed sample."
+				},
+				"getPastAccumulator(mapping(uint256 => bytes32) storage,IPriceOracle.Variable,uint256,uint256)": {
+					"details": "Returns the value of the accumulator for `variable` `ago` seconds ago. `latestIndex` must be the index of the latest sample in the buffer. Reverts under the following conditions:  - if the buffer is empty.  - if querying past information and the buffer has not been fully initialized.  - if querying older information than available in the buffer. Note that a full buffer guarantees queries for the    past 34 hours will not revert. If requesting information for a timestamp later than the latest one, it is extrapolated using the latest available data. When no exact information is available for the requested past timestamp (as usually happens, since at most one timestamp is stored every two minutes), it is estimated by performing linear interpolation using the closest values. This process is guaranteed to complete performing at most 10 storage reads."
+				},
+				"getTimeWeightedAverage(mapping(uint256 => bytes32) storage,IPriceOracle.OracleAverageQuery,uint256)": {
+					"details": "Returns the time average weighted price corresponding to `query`."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MetaStablePoolFactory.sol": "QueryProcessor"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MetaStablePoolFactory.sol": {
+			"keccak256": "0x18c4696133f33da03b00bde5fba928c156e4530fac35d190b7128a78a50bb721",
+			"urls": [
+				"bzz-raw://e6bdad938c981d96388c77c6aa75c777db251ebefe5736931e6ca4a01571f8eb",
+				"dweb:/ipfs/QmX45wiyEcoCa7paWmL4fudxXJwTJ8S6VkpdA6eCBpPAa6"
+			]
+		}
+	},
+	"version": 1
+}

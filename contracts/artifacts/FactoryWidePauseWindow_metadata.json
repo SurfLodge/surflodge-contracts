@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getPauseConfiguration",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "pauseWindowDuration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bufferPeriodDuration",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Utility to create Pool factories for Pools that use the `TemporarilyPausable` contract. By calling `TemporarilyPausable`'s constructor with the result of `getPauseConfiguration`, all Pools created by this factory will share the same Pause Window end time, after which both old and new Pools will not be pausable.",
+			"kind": "dev",
+			"methods": {
+				"getPauseConfiguration()": {
+					"details": "Returns the current `TemporarilyPausable` configuration that will be applied to Pools created by this factory. `pauseWindowDuration` will decrease over time until it reaches zero, at which point both it and `bufferPeriodDuration` will be zero forever, meaning deployed Pools will not be pausable."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/WeightedPool2TokensFactory.sol": "FactoryWidePauseWindow"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/WeightedPool2TokensFactory.sol": {
+			"keccak256": "0xd0cf39ba12ab02eca11de543e45c384b3434453874caeca3b50ae3801a5e8f2d",
+			"urls": [
+				"bzz-raw://602299fc031ebb67ea9c4e0fafee16bd06533885dd01756ed17f98bfbf90d10d",
+				"dweb:/ipfs/QmSK1DQJYHLMSa6QoZLKchhvR1HLyAFm1wVgYofTrfeP2u"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,94 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getPoolId",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "poolID",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "swapEnabled",
+						"type": "bool"
+					}
+				],
+				"name": "setSwapEnabled",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "startTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "endTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "endWeights",
+						"type": "uint256[]"
+					}
+				],
+				"name": "updateWeightsGradually",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/CooperProxy.sol": "LBP"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/CooperProxy.sol": {
+			"keccak256": "0x8b7a9eaddb14b2356ad8f1ec1d10613590640a98f3455bba40696a4832ed4841",
+			"urls": [
+				"bzz-raw://a90a51ac3a1c22c57591381cbb960f5c4da28b116bc131731b83f06dddf3382c",
+				"dweb:/ipfs/QmQ7FsvJmjw959W1h8P93nuWQU3nt563taSgBiG4dhV8e8"
+			]
+		}
+	},
+	"version": 1
+}

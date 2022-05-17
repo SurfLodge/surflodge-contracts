@@ -1,0 +1,112 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "pid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "surfAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newLpAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "onSurfReward",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "pid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "surfAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "pendingTokens",
+				"outputs": [
+					{
+						"internalType": "contract IERC20[]",
+						"name": "",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MasterChef.sol": "IRewarder"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MasterChef.sol": {
+			"keccak256": "0x934676ce539a9227aaa56c11361ed8173bc3136d6550c42f0f11c02d00b4f4cb",
+			"urls": [
+				"bzz-raw://6599ada705585ff7db973cdb73ce7fd0ca02d648cb6e8d2ea2c29d9a3fc80b22",
+				"dweb:/ipfs/QmU8Kpzhvw9NFobFyeYMiGtfd2BsLzY4cmZqy9Rdj6AaKX"
+			]
+		}
+	},
+	"version": 1
+}

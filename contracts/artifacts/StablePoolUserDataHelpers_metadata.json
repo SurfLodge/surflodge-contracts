@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/StablePoolFactory.sol": "StablePoolUserDataHelpers"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/StablePoolFactory.sol": {
+			"keccak256": "0x583081266f96d9e5da706b0361cbba2576c83e9636bd472c541cb1cf3fdfbd36",
+			"urls": [
+				"bzz-raw://3388063a34658a3268699da175fb867f22255286fb0c414513ed9a28149780a0",
+				"dweb:/ipfs/QmUskJkAA7zMWKhDGBLFnSfFKWtbnqeQsDb6gxRpZBXtvV"
+			]
+		}
+	},
+	"version": 1
+}

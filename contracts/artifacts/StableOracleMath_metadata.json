@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MetaStablePoolFactory.sol": "StableOracleMath"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MetaStablePoolFactory.sol": {
+			"keccak256": "0x18c4696133f33da03b00bde5fba928c156e4530fac35d190b7128a78a50bb721",
+			"urls": [
+				"bzz-raw://e6bdad938c981d96388c77c6aa75c777db251ebefe5736931e6ca4a01571f8eb",
+				"dweb:/ipfs/QmX45wiyEcoCa7paWmL4fudxXJwTJ8S6VkpdA6eCBpPAa6"
+			]
+		}
+	},
+	"version": 1
+}

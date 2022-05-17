@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getDomainSeparator",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "getNextNonce",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface for the SignatureValidator helper, used to support meta-transactions.",
+			"kind": "dev",
+			"methods": {
+				"getDomainSeparator()": {
+					"details": "Returns the EIP712 domain separator."
+				},
+				"getNextNonce(address)": {
+					"details": "Returns the next nonce used by an address to sign messages."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/WeightedPool2TokensFactory.sol": "ISignaturesValidator"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/WeightedPool2TokensFactory.sol": {
+			"keccak256": "0xd0cf39ba12ab02eca11de543e45c384b3434453874caeca3b50ae3801a5e8f2d",
+			"urls": [
+				"bzz-raw://602299fc031ebb67ea9c4e0fafee16bd06533885dd01756ed17f98bfbf90d10d",
+				"dweb:/ipfs/QmSK1DQJYHLMSa6QoZLKchhvR1HLyAFm1wVgYofTrfeP2u"
+			]
+		}
+	},
+	"version": 1
+}

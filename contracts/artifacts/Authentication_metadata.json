@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "selector",
+						"type": "bytes4"
+					}
+				],
+				"name": "getActionId",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Building block for performing access control on external functions. This contract is used via the `authenticate` modifier (or the `_authenticateCaller` function), which can be applied to external functions to only make them callable by authorized accounts. Derived contracts must implement the `_canPerform` function, which holds the actual access control logic.",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "The main purpose of the `actionIdDisambiguator` is to prevent accidental function selector collisions in multi contract systems. There are two main uses for it:  - if the contract is a singleton, any unique identifier can be used to make the associated action identifiers    unique. The contract's own address is a good option.  - if the contract belongs to a family that shares action identifiers for the same functions, an identifier    shared by the entire family (and no other contract) should be used instead."
+				},
+				"getActionId(bytes4)": {
+					"details": "Returns the action identifier associated with the external function described by `selector`."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/WeightedPool2TokensFactory.sol": "Authentication"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/WeightedPool2TokensFactory.sol": {
+			"keccak256": "0xd0cf39ba12ab02eca11de543e45c384b3434453874caeca3b50ae3801a5e8f2d",
+			"urls": [
+				"bzz-raw://602299fc031ebb67ea9c4e0fafee16bd06533885dd01756ed17f98bfbf90d10d",
+				"dweb:/ipfs/QmSK1DQJYHLMSa6QoZLKchhvR1HLyAFm1wVgYofTrfeP2u"
+			]
+		}
+	},
+	"version": 1
+}

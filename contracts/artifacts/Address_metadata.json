@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/fsurf.sol": "Address"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/fsurf.sol": {
+			"keccak256": "0x20650cc1bd988684491c53608966f99768df7cda93740269c6c132fd9e23e79f",
+			"urls": [
+				"bzz-raw://2919d2e3238f3c6c7998262c85f77bf437714e600cb5a336945cd14878827519",
+				"dweb:/ipfs/QmdfTAArEcp54CTgYxoz6Nfe6EMk3LSbrhDWPmfpbQtzt5"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getDomainSeparator",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "getNextNonce",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Utility for signing Solidity function calls. This contract relies on the fact that Solidity contracts can be called with extra calldata, and enables meta-transaction schemes by appending an EIP712 signature of the original calldata at the end. Derived contracts must implement the `_typeHash` function to map function selectors to EIP712 structs.",
+			"kind": "dev",
+			"methods": {
+				"getDomainSeparator()": {
+					"details": "Returns the EIP712 domain separator."
+				},
+				"getNextNonce(address)": {
+					"details": "Returns the next nonce used by an address to sign messages."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Vault.sol": "SignaturesValidator"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Vault.sol": {
+			"keccak256": "0x2647df9f02081f30d2a22ed36875a316f01990ca7fda809aa7ba69c54382f9ff",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://85aea240665c45e7ab52667176587f5cfb2ff26d442f2e985b5c2940f55ae6a3",
+				"dweb:/ipfs/QmcQLXGAxsHgvUvqkyhfPpoLytuSnodpUoSFpaoRT6GFgt"
+			]
+		}
+	},
+	"version": 1
+}
